@@ -1,0 +1,29 @@
+Send To BitTorrent
+
+Developed by Budda <http://buddasworld.co.uk>
+
+
+This extension makes clicked .torrent files go straight to your a
+device on your network which has the official embedded BitTorrent
+web client.
+
+Such devices included the Netgear ReadyNAS range of network storage
+boxes.
+
+I have tested this extension with the Netgear ReadyNAS NV+
+
+
+Setup
+
+You must set the extension options to point to your NAS box where
+the BitTorrent web client is running. For the NetGear ReadyNAS
+the client runs on the same IP address as your ReadyNAS but on
+port 8080. So the location could be http://192.168.1.200:8080
+
+
+Usage
+
+All web pages you visit will now be scanned for links ending
+in ".torrent". Clicking on the link will send the torrent file
+to your nominated device and provide a Chrome browser prompt
+to confirm what was sent.
