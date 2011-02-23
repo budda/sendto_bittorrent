@@ -1,0 +1,12 @@
+{
+  "name": "Send torrent URLS to the BitTorrent Web",
+  "version": "1.0",
+  "background_page": "background.html",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "js": ["jquery.min.js", "btsdk.js", "findtorrents.js"],
+      "run_at": "document_end"
+    }],
+  "options_page": "options.html"
+}

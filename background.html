@@ -1,0 +1,24 @@
+<html>
+<head>
+<script type="text/javascript">
+chrome.extension.onRequest.addListener(
+     function(request, sender, sendResponse)
+     {     
+        switch (request.name)
+        {
+           case "getOptions":
+              // request from the content script to get the preferences.
+              sendResponse(
+                    {
+                       nasboxurl : localStorage.nasboxurl
+                    });
+              break;
+        }
+     }
+);
+</script>
+</head>
+
+<body>
+</body>
+</html>
