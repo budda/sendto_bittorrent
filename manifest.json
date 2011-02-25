@@ -1,5 +1,6 @@
 {
-  "name": "Send torrent URLS to the BitTorrent Web",
+  "name": "Send to BitTorrent",
+  "description": "Send torrent URLS to the BitTorrent Web UI embedded on NAS devices.",
   "version": "1.0",
   "background_page": "background.html",
   "content_scripts": [
@@ -8,5 +9,7 @@
       "js": ["jquery.min.js", "btsdk.js", "findtorrents.js"],
       "run_at": "document_end"
     }],
-  "options_page": "options.html"
+  "options_page": "options.html",
+  "icons": {  "16": "icon16.png",
+             "128": "icon128.png" }
 }
