@@ -8,9 +8,12 @@ chrome.extension.onRequest.addListener(
         {
            case "getOptions":
               // request from the content script to get the preferences.
+              var nasboxurl = localStorage.nasboxurl;
+              if(nasboxurl == '') { nasboxurl = ''; }
+              
               sendResponse(
                     {
-                       nasboxurl : localStorage.nasboxurl
+                       nasboxurl : nasboxurl
                     });
               break;
         }
