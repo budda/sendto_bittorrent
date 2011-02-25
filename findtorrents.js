@@ -7,7 +7,7 @@ jQuery(document).ready(function() {
         sdkCtl.nasboxurl = response.nasboxurl;
    });
 
-  jQuery('a[href$="torrent"]').each(function() {
+  jQuery('a[href$=".torrent"]').each(function() {
     jQuery(this).click(function(event) {
       // Add clicked torrent file to the BitTorrent web client
       var torrentURL = jQuery(this).attr("href");
